@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Authress Starter Kit: Next.js
+
+This repository is a repo template that contains a Nex.js example that uses Authress to Login. You can either [Fork](https://github.com/new?template_name=nextjs-starter-kit&template_owner=Authress) this repository to start with the template, or directly clone it above.
 
 ## Getting Started
 
-First, run the development server:
+1. Fork this template repository to start a new Next.js project: [Fork this template](https://github.com/Authress/nextjs-starter-kit/fork)
+2. Clone the new repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```sh
+git clone git@github.com:Authress/nextjs-starter-kit.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run `npm install` and then `npm run start`. (Or use yarn/pnpm to install dependencies and then `start` the site.)
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### File Directory
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* `src/app`
+  * `page.tsx` - Landing page which has login and logout buttons
+  * `authressClient.tsx` - Configuration for Authress for users to login
+  * `protected/page.tsx` - Page protected by user login via the login guard defined in the `main.tsx` file

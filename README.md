@@ -1,4 +1,19 @@
+<p align="center">
+    <img src="https://github.com/Authress/authress-sdk.cs/assets/5056218/924fb776-9588-4d4a-adf7-33682fa29356" height="300px" alt="Authress Media Banner">
+</p>
+
 # Authress Starter Kit: Next.js
+
+<div>
+
+ ![Next.js](./public/next.svg)
+
+</div>
+
+<p align="center">
+    <a href="./LICENSE" alt="Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://authress.io/community" alt="authress community"><img src="https://img.shields.io/badge/Community-Authress-fbaf0b.svg"></a>
+</p>
 
 This repository is a repo template that contains a Nex.js example that uses Authress to Login. You can either [Fork](https://github.com/new?template_name=nextjs-starter-kit&template_owner=Authress) this repository to start with the template, or directly clone it above.
 

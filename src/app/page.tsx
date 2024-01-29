@@ -30,7 +30,7 @@ export default function App() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', width: '100%', textAlign: 'center' }}>
       <div>
-        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', textAlign: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center', textAlign: 'center' }}>
           <a href="https://authress.io" target="_blank">
             <Image
               className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
@@ -41,13 +41,14 @@ export default function App() {
               priority
             />
           </a>
+          <h1 style={{ marginRight: '2.5rem' }}>+</h1>
           <a href="https://authress.io/knowledge-base/docs/SDKs/javascript#starter-kits" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
             <div>
               <Image
-                className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                className=""
                 src="/next.svg"
                 alt="Next.js Logo"
-                width={180}
+                width={240}
                 height={37}
                 priority
               />

@@ -1,14 +1,8 @@
 <p align="center">
-    <img src="https://github.com/Authress/authress-sdk.cs/assets/5056218/924fb776-9588-4d4a-adf7-33682fa29356" height="300px" alt="Authress Media Banner">
+  <img height="300px" src="https://authress.io/static/images/media-banner.png" alt="Authress media banner">
 </p>
 
 # Authress Starter Kit: Next.js
-
-<div>
-
- ![Next.js](./public/next.svg)
-
-</div>
 
 <p align="center">
     <a href="./LICENSE" alt="Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>

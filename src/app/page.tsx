@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from 'react';
 
-import { login, logout, makeApiCallWithUserToken, starterKitIsConfiguredCorrectly, authressLoginClient } from './authressClient';
+import { login, logout, makeApiCallWithUserToken, authressLoginClient } from './authressClient';
 import Link from "next/link";
 
 export default function App() {
@@ -12,19 +12,19 @@ export default function App() {
 
   useEffect(() => {
     async function func() {
-      if (starterKitIsConfiguredCorrectly) {
+      if (authressLoginClient) {
         authressLoginClient.userSessionExists().then((userIsLoggedIn) => {
-          setUserProfile(authressLoginClient.getUserIdentity());
+          setUserProfile(authressLoginClient!.getUserIdentity());
           console.log('User is Logged In', userIsLoggedIn, userProfile);
         });
       }
     }
 
     func();
-  }, []);
+  }, [userProfile]);
 
   useEffect(() => {
-    setAuthressApiUrlIsSet(starterKitIsConfiguredCorrectly);
+    setAuthressApiUrlIsSet(!!authressLoginClient);
   }, []);
 
   return (

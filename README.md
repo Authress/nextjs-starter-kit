@@ -18,6 +18,7 @@ This repository is a repo template that contains a Nex.js example that uses Auth
 
 ```sh
 git clone git@github.com:Authress/nextjs-starter-kit.git
+cd nextjs-starter-kit
 ```
 
 3. Run `npm install` and then `npm run start`. (Or use yarn/pnpm to install dependencies and then `start` the site.)

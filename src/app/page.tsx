@@ -21,7 +21,7 @@ export default function App() {
     }
 
     func();
-  }, [userProfile]);
+  }, []);
 
   useEffect(() => {
     setAuthressApiUrlIsSet(!!authressLoginClient);
@@ -42,7 +42,7 @@ export default function App() {
             />
           </a>
           <h1 style={{ marginRight: '2.5rem' }}>+</h1>
-          <a href="https://authress.io/knowledge-base/docs/SDKs/javascript#starter-kits" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+          <a href="https://authress.io/knowledge-base/docs/SDKs/javascript#starter-kits" target="_blank" style={{ display: 'flex', alignItems: 'center', marginRight: '2.5rem' }}>
             <div>
               <Image
                 className=""
@@ -55,8 +55,7 @@ export default function App() {
             </div>
           </a>
         </div>
-        
-        <h1>Authress + Next.js</h1>
+
         <br></br>
 
         <div

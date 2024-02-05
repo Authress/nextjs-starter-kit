@@ -21,7 +21,7 @@ git clone git@github.com:Authress/nextjs-starter-kit.git
 cd nextjs-starter-kit
 ```
 
-3. Run `npm install` and then `npm run start`. (Or use yarn/pnpm to install dependencies and then `start` the site.)
+3. Run `npm install` and then `npm run dev`. (Or use yarn/pnpm to install dependencies and then `start` the site.)
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### File Directory

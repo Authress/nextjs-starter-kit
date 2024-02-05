@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from 'react';
 
-import { login, logout, makeApiCallWithUserToken, starterKitIsConfiguredCorrectly, authressLoginClient } from './authressClient';
+import { login, logout, makeApiCallWithUserToken, authressLoginClient } from './authressClient';
 import Link from "next/link";
 
 export default function App() {
@@ -12,9 +12,9 @@ export default function App() {
 
   useEffect(() => {
     async function func() {
-      if (starterKitIsConfiguredCorrectly) {
+      if (authressLoginClient) {
         authressLoginClient.userSessionExists().then((userIsLoggedIn) => {
-          setUserProfile(authressLoginClient.getUserIdentity());
+          setUserProfile(authressLoginClient!.getUserIdentity());
           console.log('User is Logged In', userIsLoggedIn, userProfile);
         });
       }
@@ -24,7 +24,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    setAuthressApiUrlIsSet(starterKitIsConfiguredCorrectly);
+    setAuthressApiUrlIsSet(!!authressLoginClient);
   }, []);
 
   return (
@@ -42,7 +42,7 @@ export default function App() {
             />
           </a>
           <h1 style={{ marginRight: '2.5rem' }}>+</h1>
-          <a href="https://authress.io/knowledge-base/docs/SDKs/javascript#starter-kits" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+          <a href="https://authress.io/knowledge-base/docs/SDKs/javascript#starter-kits" target="_blank" style={{ display: 'flex', alignItems: 'center', marginRight: '2.5rem' }}>
             <div>
               <Image
                 className=""
@@ -55,8 +55,7 @@ export default function App() {
             </div>
           </a>
         </div>
-        
-        <h1>Authress + Next.js</h1>
+
         <br></br>
 
         <div
